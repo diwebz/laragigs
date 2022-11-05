@@ -9,8 +9,21 @@
     <div class="mx-4">
         <x-card class="p-10">
             <div class="flex flex-col items-center justify-center text-center">
-                <img class="w-48 mr-6 mb-6" src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no_image.png')}}" alt=""/>
-            <h3 class="text-2xl mb-2">{{$listing->title}}</h3>
+                {{-- <img class="w-48 mr-6 mb-6" src="{{$listing->image_name ? ('../storage/' . $listing->image_name) : ('/images/no_image.png')}}" alt=""/> --}}
+                @unless ($listing->images->isEmpty())
+                    @foreach ($listing->images as $image)
+                    <figure>
+                        <img src="/images/external/{{$image->image_name}}" class="w-48 mr-6 mb-6">
+                    </figure>
+                    @endforeach
+                @else
+                    <figure>
+                        <img src="/images/no_image.png" class="w-32 mx-auto h-full">
+                    </figure>
+                @endunless
+                
+                
+                <h3 class="text-2xl mb-2">{{$listing->title}}</h3>
                 <div class="text-xl font-bold mb-4">{{$listing->company}}</div>
                 
                 <x-listing-tags :tagsCsv="$listing->tags" />

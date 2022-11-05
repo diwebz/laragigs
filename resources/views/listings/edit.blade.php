@@ -126,16 +126,41 @@
       </div>
 
       <div class="mb-6">
-          <label for="logo" class="inline-block text-lg mb-2">
+          <label for="img_three" class="inline-block text-lg mb-2">
               Company Logo
           </label>
-          <input
-              type="file"
-              class="border border-gray-200 rounded p-2 w-full"
-              name="logo"
+          <input 
+            id="img_three"
+            type="file" 
+            name="images[]"
+            class="border border-gray-200 rounded p-2 w-full" 
+            accept="image/*"
           />
-          <img class="w-48 mr-6 mb-6 mt-2" 
-          src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no_image.png')}}" alt=""/>
+          <input 
+            id="img_three"
+            type="file" 
+            name="images[]"
+            class="border border-gray-200 rounded p-2 w-full" 
+            accept="image/*"
+          />
+          <input 
+            id="img_three"
+            type="file" 
+            name="images[]"
+            class="border border-gray-200 rounded p-2 w-full" 
+            accept="image/*"
+          />
+          @unless ($listing->images->isEmpty())
+                    @foreach ($listing->images as $image)
+                    <figure>
+                        <img src="/images/external/{{$image->image_name}}" class="w-48 mr-6 mb-6">
+                    </figure>
+                    @endforeach
+                @else
+                    <figure>
+                        <img src="/images/no_image.png" class="w-32 mx-auto h-full">
+                    </figure>
+                @endunless
 
           @error('logo')
             <p class="text-red-500 text-xs mt-1">

@@ -28,4 +28,14 @@ class Listing extends Model
     public function user() {
         return $this->belongsTo(User::class, 'user_id');
     }
+
+    // Relationship with images
+    public function images(){
+        return $this->hasMany(Image::class, 'listing_id');
+    }
+
+    // Relationship with images
+    public function images_col(){
+        return $this->hasMany(Images_cols::class, 'listing_id');
+    }
 }

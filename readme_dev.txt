@@ -11,7 +11,7 @@ Laravel project development (job listing system)
 
 - create an eloquent model : php artisan make:model Listing
 
-- create migration table : php aritsan make:migration create_listings_table
+- create migration table : php artisan make:migration create_listings_table
 - Then,, run this command to create tables : php artisan migrate
   this command will create tables for all migration files in migrations directory.
 
@@ -202,7 +202,7 @@ I'm touching these areas,
 
 
 
-### upgrading ###
+### upgrading project ###
 
 1. create folder and upload images
 
@@ -216,3 +216,54 @@ https://laracasts.com/discuss/channels/laravel/laravel-custom-file-system-config
 
 https://www.youtube.com/watch?v=a8XW_FvADIM
 https://www.youtube.com/watch?v=SonhvOpBnMc
+
+2. delete image files with listing item
+
+https://stackoverflow.com/questions/63761924/how-to-delete-image-from-folder-in-laravel-for-parent-and-child-case
+
+3. Uplaod multiple images in laravel 9
+
+https://www.itsolutionstuff.com/post/laravel-9-multiple-image-upload-tutorialexample.html
+https://www.youtube.com/watch?v=x_XPDXCQ4JU
+https://www.youtube.com/watch?v=9roKu4-uPxA
+https://www.youtube.com/watch?v=A_zX0bhUm_Y
+
+4. Set laravel system only valid for 14 days and expire validity.
+https://laraveldaily.com/post/laravel-saas-free-trial-implementation
+
+5. Insert multiple images into multiple columns in a row
+https://laracasts.com/discuss/channels/laravel/add-multiple-images-to-database
+https://laracasts.com/discuss/channels/laravel/split-data-from-database-column-view-as-string?page=1
+https://laracasts.com/discuss/channels/laravel/how-to-upload-multiple-image-in-a-single-row
+https://stackoverflow.com/questions/40461022/how-to-store-multiple-images-paths-into-database-in-laravel
+https://stackoverflow.com/questions/59650053/upload-multiple-images-laravel-in-single-row-table
+
+6. Update multiple images
+https://stackoverflow.com/questions/63560619/how-can-i-update-multiple-images-in-laravel
+https://webdevask.com/items/how-can-i-update-multiple-images-in-laravel
+https://laravel.io/forum/10-19-2015-multiple-product-image-update
+https://laravel.io/forum/06-30-2014-update-image-using-intervention
+https://laravel.io/forum/02-19-2015-images-not-updating
+
+7. View multiple images in multiple columns in a single row
+https://stackoverflow.com/questions/73001936/how-to-display-multiple-or-single-images-for-a-product-page-in-laravel
+https://laravel.io/forum/03-05-2014-three-table-relationship-problem-in-view-product-producimages-imagetypes-how-to-show-images-by-type-in-specific-section-in-view-not-all-images
+
+8. Preview before upload images
+https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
+https://stackoverflow.com/questions/72493010/how-to-preview-image-file-after-it-is-selected-and-before-uploading-on-laravel
+https://laravel-livewire.com/docs/2.x/file-uploads
+https://larainfo.com/blogs/laravel-9-image-upload-with-preview-using-tailwind-css-alpine-js
+https://www.dropzone.dev/
+https://preview.keenthemes.com/html/metronic/docs/forms/dropzonejs
+https://codepen.io/blackjacques/pen/jyxNqL
+
+9. Laravel validate collect()
+https://www.parthpatel.net/laravel-collection-methods-tutorial/
+https://m.dotdev.co/use-laravel-validator-while-filtering-collections-e4e753d40b99
+https://stackoverflow.com/questions/38326282/validating-multiple-files-in-array
+
+10. Laravel 9 image files validation
+https://write.corbpie.com/laravel-9-multiple-file-upload-with-validation-example/
+https://www.tutsmake.com/image-validation-in-laravel/
+https://stackoverflow.com/questions/45758449/laravel-validate-at-least-one-item-in-a-form-array

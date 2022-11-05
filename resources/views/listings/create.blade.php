@@ -146,14 +146,156 @@
       </div> --}}
 
       <div class="mb-6">
-          <label for="logo" class="inline-block text-lg mb-2">
-              Company Logo
+          <label for="listing-images" class="inline-block text-lg mb-2">
+              Listing images
           </label>
-          <input
+          {{-- <input
               type="file"
               class="border border-gray-200 rounded p-2 w-full"
               name="logo"
-          />
+          /> --}}
+          <div class="listing-images flex flex-wrap">
+            <div class="btn-img_upload">
+              <label for="img_one" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>                
+              </label>
+              <input 
+                id="img_one"
+                type="file" 
+                name="images[]"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_two" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_two"
+                type="file" 
+                name="images[]"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_three" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_three"
+                type="file" 
+                name="images[]"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            {{-- <div class="btn-img_upload">
+              <label for="img_four" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_four"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_five" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_five"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div> --}}
+            {{-- <div class="btn-img_upload">
+              <label for="img_six" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_six"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_seven" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_seven"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_eight" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_eight"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_nine" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_nine"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div>
+            <div class="btn-img_upload">
+              <label for="img_ten" class="inline-block p-2 border-solid border border-gray-400 cursor-pointer mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                
+              </label>
+              <input 
+                id="img_ten"
+                type="file" 
+                name="images"
+                class="border border-gray-200 rounded p-2 w-full hidden" 
+                accept="image/*"
+              />
+            </div> --}}
+          </div>
 
           @error('logo')
             <p class="text-red-500 text-xs mt-1">

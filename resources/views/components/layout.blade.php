@@ -29,7 +29,7 @@
 <body class="mb-48">
   <nav class="flex justify-between items-center mb-4">
     <a href="/">
-      <img class="w-24" src="{{asset('/images/laravel_logo.jpg')}}" alt="" class="logo"/>
+      <img class="w-24" src="{{('/images/laravel_logo.jpg')}}" alt="" class="logo"/>
     </a>
     <ul class="flex space-x-4 px-4 text-lg">
       @auth
